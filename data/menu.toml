@@ -1,0 +1,8 @@
+[[entries]]
+title = "Recent"
+
+  [entries.post_list]
+  limit = 5
+  show_more = true
+  show_more_text = "Everything else..."
+  show_more_url = "posts"

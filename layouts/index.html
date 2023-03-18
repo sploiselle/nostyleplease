@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<header>
+    <h1>{{ $.Site.Title }}</h1>
+    {{- if $.Site.Params.theme_config.show_description -}}
+    <p>{{ $.Site.Params.description }}</p>
+    {{- end -}}
+</header>
+I work at <a href="https://materialize.com/">Materialize</a>. Previously, I worked at <a
+    href="https://www.cockroachlabs.com/">CockroachDB</a>, GoDaddy.com, and
+Harkins Movie Theaters.
+{{ .Content }}
+{{ partial "menu_item.html" (dict "context" . "collection" $.Site.Data.menu.entries) }}
+
+{{ end }}
